@@ -7,6 +7,7 @@ import './App.css'
 import Home from './pages/Home';
 import About from './pages/About';
 import Recommendations from './pages/Recommendations';
+import Result from './pages/Result';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   {
     path: "/recommendation",
     element: <Recommendations />
+  },
+  {
+    path: "/result",
+    element: <Result />
   }
 ]);
 

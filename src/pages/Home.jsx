@@ -3,7 +3,11 @@ import bgImg from "../assets/wheat.webp"
 import NavBar from '../components/NavBar'
 import Button from '../components/Button'
 import HeroSec from '../components/HeroSec'
+import { useNavigate } from 'react-router-dom'
 const Home = () => {
+
+  const nav = useNavigate()
+
   return (
     <div className='flex flex-col text-white justify-center items-center w-[100vw]  h-[100vh]' >
         <NavBar />
@@ -13,7 +17,11 @@ const Home = () => {
                 <div className='text-5xl' >CropAI</div>
                 <div className='text-2xl' >Intelligent Crop and Fertilizer Recommendation System</div>
             </div>
-            <Button className={" text-xl absolute z-[4] translate-x-[-50%] bottom-[0px] px-[28px] py-[20px]"} >Get Started</Button>
+            <Button onClick={() => {
+              nav("/recommendation")
+            }} className={" text-xl absolute z-[4] translate-x-[-50%] bottom-[0px] px-[28px] py-[20px]"} 
+              
+            >Get Started</Button>
         </div>
     </div>
   )

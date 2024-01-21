@@ -24,7 +24,9 @@ const NavBar = () => {
           <Link to="/recommendation" >
             <li className={`${page === "/recommendation" ? "nav-pag-active" : ""}`} >Recommendation</li>
           </Link>
-          <li className={`${page === "/result" ? "nav-pag-active" : ""}`} >Result</li>
+          <Link to="/result" >
+            <li className={`${page === "/result" ? "nav-pag-active" : ""}`} >Result</li>
+          </Link>
         </ul>
       </div>
     </div>

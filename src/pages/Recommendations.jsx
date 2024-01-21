@@ -33,19 +33,19 @@ const initNodes = [
   {
     id: '4',
     type: 'custom',
-    data: { name: 'Rainfall(mm)', job: 'Developer', emoji: '🤩' },
+    data: { name: 'Rainfall(mm)', job: 'Developer' },
     position: { x: 1000, y: 150 },
   },
   {
     id: '5',
     type: 'custom',
-    data: { name: 'Potassium(mg/kg)', job: 'Developer', emoji: '🤩' },
+    data: { name: 'Potassium(mg/kg)', job: 'Developer' },
     position: { x: 900, y: 380 },
   },
   {
     id: '6',
     type: 'custom',
-    data: { name: 'Phosphorous(mg/kg)', job: 'Developer', emoji: '🤩' },
+    data: { name: 'Phosphorous(mg/kg)', job: 'Developer' },
     position: { x: 1000, y: 280 },
   },  
   {
@@ -157,6 +157,11 @@ const Recommendations = () => {
         zoomOnScroll={false}
         draggable={false}
         nodeTypes={nodeTypes}
+        proOptions={
+          {
+            hideAttribution: true
+          }
+        }
         zoom
       />
     </div>
